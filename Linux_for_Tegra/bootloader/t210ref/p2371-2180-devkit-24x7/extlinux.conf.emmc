@@ -1,0 +1,10 @@
+TIMEOUT 30
+DEFAULT primary
+
+MENU TITLE p2371-2180 eMMC boot options
+
+LABEL primary
+      MENU LABEL primary kernel
+      LINUX /boot/Image
+      INITRD /boot/initrd
+      APPEND ${cbootargs} root=/dev/mmcblk0p1 rw rootwait
