@@ -429,7 +429,7 @@ fi
 pushd "${LDK_ROOTFS_DIR}/usr/src" > /dev/null 2>&1
 sudo tar jxpfm "${LDK_KERN_DIR}/kernel_headers.tbz2"
 # Since the files are owned by root, the README needs to be adjusted.
-ReplaceText "${KERNEL_HEADERS_NAME}/README" "make modules_prepare" "sudo make modules_prepare";
+# ReplaceText "${KERNEL_HEADERS_NAME}/README" "make modules_prepare" "sudo make modules_prepare";
 sudo chown -R root:root "${KERNEL_HEADERS_NAME}"
 # Link to the kernel headers from /lib/modules/<version>/build
 KERNEL_MODULES_DIR="${LDK_ROOTFS_DIR}/lib/modules/${KERNEL_HEADERS_NAME#linux-headers-}"
