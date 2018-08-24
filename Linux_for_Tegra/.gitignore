@@ -3,6 +3,7 @@ display/*
 nvgpu/*
 nvhost/*
 nvmap/*
-rootfs/lib/*
+rootfs/*
 bootloader/t210ref/kmti200-2180/*
+
 
