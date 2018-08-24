@@ -1,10 +1,10 @@
 TIMEOUT 30
 DEFAULT primary
 
-MENU TITLE e2220-1170 SD Card boot options
+MENU TITLE kmti200-2180 eMMC boot options
 
 LABEL primary
       MENU LABEL primary kernel
       LINUX /boot/Image
       INITRD /boot/initrd
-      APPEND ${cbootargs} root=/dev/mmcblk1p1 rw rootwait
+      APPEND ${cbootargs} root=/dev/mmcblk0p1 rw rootwait

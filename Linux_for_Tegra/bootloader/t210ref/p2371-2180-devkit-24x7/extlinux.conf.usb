@@ -1,9 +1,0 @@
-TIMEOUT 30
-DEFAULT primary
-
-MENU TITLE p2371-2180 USB boot options
-
-LABEL primary
-      MENU LABEL primary kernel
-      LINUX /boot/Image
-      APPEND ${cbootargs} root=/dev/sda1 rw rootwait

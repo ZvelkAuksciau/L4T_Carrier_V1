@@ -6,4 +6,6 @@ nvmap/*
 rootfs/*
 bootloader/t210ref/kmti200-2180/*
 
+!bootloader/t210ref/kmti200-2180/extlinux.conf.emmc
+
 
